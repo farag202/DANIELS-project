@@ -1,0 +1,478 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Home section start */
+
+.home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(imgs/bg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+.navbar{
+    height: 0px;
+    
+}
+
+.navbar-brand , .nav-item a {
+    color: white;
+}
+
+.in{
+    position: relative;
+}
+
+.in::after{
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    top: 30;
+    left: 10;
+    background-color: white;
+}
+
+.text {
+    text-align: center;
+    margin-top: 250px;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.text h5{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.text h1{
+    font-size: 6rem;
+    
+}
+
+.text h1::after{
+    content: "";
+    animation: typing infinite 2s;
+}
+
+@keyframes typing {
+    0%{
+        content: "D|";
+    }
+    5%{
+        content: "De|";
+    }
+    10%{
+        content: "Des|";
+    }
+    15%{
+        content: "Desi|";
+    }
+    20%{
+        content: "Desig|";
+    }
+    25%{
+        content: "Design|";
+    }
+    30%{
+        content: "Designe|";
+    }
+    35%{
+        content: "Designer|";
+    }
+    45%{
+        content: "Designer|";
+    }
+    50%{
+        content: "Designer|";
+    }
+    55%{
+        content: "Designe|";
+    }
+    60%{
+        content: "Design|";
+    }
+    65%{
+        content: "Desig|";
+    }
+    70%{
+        content: "Desi|";
+    }
+    75%{
+        content: "Des|";
+    }
+    80%{
+        content: "De|";
+    }
+    90%{
+        content: "D|";
+    }
+    100%{
+        content: "|";
+    }
+
+    
+}
+/* home section end */
+
+
+/* About Me section start */
+
+.container {
+    margin-top: 90px;
+    width: 80%;
+    height: 80vh;
+
+}
+
+.img {
+    margin-left: 130px;
+    width: 70%;
+}
+
+.progress-bar {
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.9));
+}
+
+.bt1 {
+    background-color: black;
+    color: white;
+}
+
+.bt1,
+.bt2 {
+    padding: 7px 25px;
+    border-radius: 10px;
+}
+
+.bt1:hover {
+    background-color: white;
+    color: black;
+
+}
+
+.bt2:hover {
+    background-color: black;
+    color: white;
+}
+
+.span{
+    color: #748182;
+    font-weight: bold;
+}
+
+/* About Me section end */
+
+
+
+
+/* Services section start */
+.services {
+    width: 80%;
+    margin: auto;
+  }
+  
+  
+.id{
+    background-color: #F7F7F7;
+    height: 120vh;
+    
+}
+  
+  
+  .services i {
+    width: 90px;
+    height: 90px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    font-size: 3rem;
+    position: relative;
+    margin-top: 10px;
+    transition: all 0.5s;
+  
+  }
+
+  
+  .group1,
+  .group2 {
+    display: flex;
+    text-align: center;
+  }
+  
+  .icon1,
+  .icon2,
+  .icon3,
+  .icon4,
+  .icon5,
+  .icon6 {
+    background-color: #fff;
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.07));
+    margin: 15px 15px;
+    padding: 30px 30px;
+   
+  }
+
+ 
+  .icon1:hover i{
+    background-color: #000;
+    color: white;
+  }
+  .icon2:hover i{
+    background-color: #000;
+    color: white;
+  }
+  .icon3:hover i{
+    background-color: #000;
+    color: white;
+  }
+  .icon4:hover i{
+    background-color: #000;
+    color: white;
+  }
+  .icon5:hover i{
+    background-color: #000;
+    color: white;
+  }
+  .icon6:hover i{
+    background-color: #000;
+    color: white;
+  }
+/* Services section end */
+
+
+/* Portfolio section start */
+ .Portfolio{
+    height: 130vh;
+    padding: 80px 0px;
+ }
+
+
+ .item .layer{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #FEFEFE;
+    opacity: 0;
+    transition: all 1s;
+ }
+
+ .item:hover .layer{
+    opacity: 1;
+ }
+
+/* Portfolio section end */
+
+
+
+
+
+/* Testimonials section start */
+
+#feed{
+    background-color: #F7F7F7;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #869791;
+}
+
+/* Testimonials section end */
+
+
+
+/* count section start */
+
+.count{
+    width: 80%;
+    height: 30vh;
+    margin: auto;
+}
+
+.row1 p{
+    color: #748182;
+}
+  .row1 h4 {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: xx-large;
+  }
+  
+  .row1 h4::after {
+    content: "";
+    animation: move infinite 1.5s;
+  
+  }
+
+@keyframes move {
+    0% {}
+  
+    25% {
+      content: "25";
+    }
+  
+    50% {
+      content: "50";
+    }
+  
+    75% {
+      content: "100";
+    }
+  
+    100% {
+      content: "200";
+    }
+}  
+/* count section end */
+
+
+
+
+/* Our Team section start */
+
+.our{
+    width: 100%;
+    height: 110vh;
+    padding: 50px 0;
+    margin: auto;
+    background-color: #F7F7F7;
+}
+
+
+.team{
+    width: 80%;
+    margin: auto;
+}
+
+.info{
+    color: white;
+    background-color: #5B5B5B;
+    border-radius: 0 0 10px 10px;
+    height: 90px;
+}
+
+.h5{
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.ourimg .imglayer{
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: #FEFEFE;
+    opacity: 0;
+    transition: all 1s;
+ }
+
+ .col-md-4:hover .imglayer{
+    opacity: 1;
+ }
+
+ .ourimg{
+    overflow: hidden;
+ }
+
+ .ourimg img{
+    transition: all 2s;
+ }
+
+ .ourimg:hover img {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+  }
+
+
+  .imglayer i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000;
+    color: white;
+    font-size: 2rem;
+
+  }
+  
+/* Our Team section end */
+
+
+
+
+/* contact section start */
+.contact{
+    width: 80%;
+    height: 100vh;
+    margin: auto;
+}
+
+.row2 i{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F4F4F4;
+    transition: all 0.5s;
+}
+
+.col-md-4:hover i{
+    color: white;
+    background-color: black;
+}
+
+.row3 input{
+    margin: auto;
+    background-color: #F4F4F4 ;
+    border: none;
+}
+
+.row4 textarea{
+    border: none;
+    background-color: #F4F4F4;
+}
+
+.bt5{
+    background-color: black;
+    color: white;
+    padding: 7px 35px;
+    border-radius: 10px;
+    margin-right:780px;
+    margin-top: 20px;
+}
+
+.bt5:hover{
+    background-color: white;
+    color: #000;
+}
+
+.us1 input{
+    background-color:  #F4F4F4 ;
+    border: none;
+    width: 435px;
+    margin: 15px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+/* contact section end */
+
+
+
+/* last section start */
+.last {
+    height: 120px;
+    background-color: #1C1C1C;
+    color:#6C7C82;
+}
+/* last section end */
+
+
